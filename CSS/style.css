@@ -54,7 +54,7 @@
   margin: 5rem 0;
   text-align: center;
   color: #ffffff;
-  font-family: "Nosifer";
+  font-family: 'montserrat', sans-serif;
 }
 .home-text h1 {
   font-size: 5rem;
@@ -70,7 +70,7 @@
   color: #ff5733;
 }
 .home-text p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .home-image {
   display: flex;
@@ -105,7 +105,7 @@
     font-size: 3rem;
   }
   .home-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .buttons{
     display: flex;
