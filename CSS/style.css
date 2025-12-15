@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+#home {
+  background-color: #2a2a2a;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2a2a2a !important; 
+
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 25px;
+  color: #ffffff;
+  font-family: "montserrat", sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ff5733;
+}
+
+.home-text {
+  margin: 5rem 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Nosifer";
+}
+.home-text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Nosifer";
+}
+.home-text h1 span {
+  color: #ff5733;
+  font-family: "Nosifer";
+}
+.home-text .welcome span {
+  font-size: 1.5rem;
+  color: #ff5733;
+}
+.home-text p {
+  font-size: 1.2rem;
+}
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons #btn {
+  background-color: #ff5733;
+  color: #ffffff;
+}
+.buttons #btn2 {
+  color: #ffffff;
+  border: 2px solid #ff5733;
+}
+.navbar-toggler-icon {
+  color: #ff5733;
+}
