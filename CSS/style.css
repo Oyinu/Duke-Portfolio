@@ -133,7 +133,7 @@ background-color: black;
 
 
 
-@media (min-width:300px) and (max-width: 768px) {
+@media (min-width:300px) and (max-width: 800px) {
   .home-text h1 {
     font-size: 4rem;
   }
