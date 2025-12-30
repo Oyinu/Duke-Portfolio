@@ -1,38 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
 * {
   scroll-behavior: smooth;
 }
 #home {
-  background-color: #2a2a2a;
+  background-color: black;
 }
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #2a2a2a !important; 
+  background-color: black !important; 
 
 }
 .navbar-nav {
   margin-left: auto;
 }
 .navbar-brand {
+  font-family: 'Geist', sans-serif;
   font-size: 24px;
-  font-weight: 700;
   color: #ffffff !important;
+}
+.navbar-brand span{
+  color: #ff5733;
 }
 .navbar-nav .nav-item .nav-link {
   font-size: 18px;
-  font-weight: 500;
   margin-right: 25px;
   color: #ffffff;
-  font-family: "montserrat", sans-serif;
+  font-family: "Geist", sans-serif;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: #ff5733;
 }
-/* Style the toggler button itself */
+
 .navbar-toggler {
   border: 3px solid #ff5733;
   padding: 8px 10px;
@@ -45,41 +45,51 @@
 }
 
 /* Style the hamburger icon (3 lines) */
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlength='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   width: 30px;
   height: 20px;
-}
+} */
 .home-text {
-  margin: 5rem 0;
-  text-align: center;
+  margin: 5rem 3rem;
+  text-align: left;
   color: #ffffff;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Geist', sans-serif;
 }
 .home-text h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  font-family: "Nosifer";
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: "Geist mono", sans-serif;
 }
 .home-text h1 span {
   color: #ff5733;
-  font-family: "Nosifer";
+  font-family: "Geist mono", sans-serif;
 }
 .home-text .welcome span {
-  font-size: 1.5rem;
   color: #ff5733;
+  font-family: "Geist mono", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .home-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight:300;
 }
-.home-image {
-  display: flex;
-  justify-content: center;
+.home-text {
+  display: block;
+  justify-content: left;
   align-items: center;
+  /* padding: auto 2rem; */
+}
+.buttons{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
 }
 .buttons #btn {
   background-color: #ff5733;
   color: #ffffff;
+  border: 2px solid #ff5733;
 }
 .buttons #btn2 {
   color: #ffffff;
@@ -88,34 +98,59 @@
 .navbar-toggler-icon {
   color: #ff5733;
 }
+#about{
+background-color: black;
+  font-family: 'Geist', sans-serif;
+  padding: 4rem 1rem;
+  padding-top: 5rem;
+}
+.about-section-begin {
+  color: #ff5733;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Geist Mono', monospace;
+}
+.about-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.about-section-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+
+}
+.about-section-image img{
+  width: 100%;
+  margin-top: 2.3rem;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-@media (max-width: 768px) {
+@media (min-width:300px) and (max-width: 768px) {
   .home-text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .home-text p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
   .buttons{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 0 auto;
-    align-items: center;
+    align-items: left;
   }
   .buttons #btn, .buttons #btn2 {
-    width: 50%;
+    width: 100%;
   }
   .home-image img {
     width: 80%;
