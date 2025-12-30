@@ -135,7 +135,7 @@ background-color: black;
 
 @media (min-width:300px) and (max-width: 800px) {
   .home-text h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .home-text p {
     font-size: 1.05rem;
