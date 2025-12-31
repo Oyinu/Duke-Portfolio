@@ -26,7 +26,7 @@
 }
 .navbar-nav .nav-item .nav-link {
   font-size: 18px;
-  margin-right: 25px;
+
   color: #ffffff;
   font-family: "Geist", sans-serif;
 }
@@ -52,7 +52,7 @@
   height: 20px;
 } */
 .home-text {
-  margin: 5rem 3rem;
+  margin: 5rem auto;
   text-align: left;
   padding-top: 3rem;
   color: #ffffff;
