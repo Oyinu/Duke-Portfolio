@@ -109,7 +109,7 @@
 background-color: black;
   font-family: 'Geist', sans-serif;
   padding: 4rem 1rem;
-  padding-top: 1rem;
+
 }
 .about-section-begin {
   color: #ff5733;
@@ -169,5 +169,8 @@ background-color: black;
   }
   .home-image img {
     width: 80%;
+  }
+  #about{
+    padding: 2rem 1rem;
   }
 }
