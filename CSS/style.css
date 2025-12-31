@@ -108,7 +108,7 @@
 #about{
 background-color: black;
   font-family: 'Geist', sans-serif;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 
 }
 .about-section-begin {
@@ -158,7 +158,7 @@ background-color: black;
     letter-spacing: 1px;
   }
   .buttons{
-    display: flex;
+    display: flex;    
     flex-direction: column;
     gap: 10px;
     margin: 0 auto;
