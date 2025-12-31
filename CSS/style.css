@@ -4,6 +4,7 @@
 }
 #home {
   background-color: black;
+  padding-top: 3rem;
   height: 120vh;
 }
 .navbar {
@@ -53,8 +54,8 @@
 } */
 .home-text {
   margin: 5rem auto;
+  padding-top: 3.5rem;
   text-align: left;
-  padding-top: 3rem;
   color: #ffffff;
   font-family: 'Geist', sans-serif;
 }
