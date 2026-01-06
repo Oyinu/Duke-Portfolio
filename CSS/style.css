@@ -29,7 +29,7 @@
   font-size: 18px;
 
   color: #ffffff;
-  font-family: "Geist", sans-serif;
+  font-family: "Geist mono", sans-serif;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: #ff5733;
@@ -75,7 +75,7 @@
   letter-spacing: 1px;
 }
 .home-text p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight:300;
 }
 .home-text {
@@ -96,22 +96,33 @@
   background-color: #ff5733;
   color: #ffffff;
   border: 2px solid #ff5733;
+  font-family: 'Geist Mono', monospace;
+  transition: .3s ease-in-out;
+}
+.buttons #btn:hover {
+  background-color: black;
+  color: #ff5733;
 }
 .buttons #btn2 {
   color: #ffffff;
   border: 2px solid #ff5733;
+  font-family: 'Geist Mono', monospace;
+}
+.buttons #btn2:hover {
+  background-color: #ff5733;
+  color: #ffffff;
 }
 .navbar-toggler-icon {
   color: #ff5733;
 }
 
-#about{
+#about, #services {
 background-color: black;
   font-family: 'Geist', sans-serif;
-  padding: rem 1rem;
+  padding: 1.6rem 1rem;
 
 }
-.about-section-begin {
+.about-section-begin, .service-section-begin {
   color: #ff5733;
   font-size: 1rem;
   font-weight: 300;
@@ -124,24 +135,70 @@ background-color: black;
 .about-section-begin span{
   font-weight: 900;
 }
-.about-section h2 {
+.about-section h2, .service-section h2 {
   color: #ffffff;
   font-size: 2.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-family: 'Geist mono';
 }
 
-.about-section-text {
+.about-section-text, .service-card {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.4;
-
+  line-height: 1.6;
+  letter-spacing: 1px;
+  width:80%;
 }
 .about-section-image img{
   width: 100%;
   margin-top: 2.3rem;
 }
+.services-cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  
+}
+.service-card h3 {
+  margin-top: .5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ff5733;
+  text-transform: uppercase;
+  font-family: 'geist mono', monospace;
+}
+.service-card p {
+  margin-top: 1rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.service-card{
+  padding: 1.5rem;
+  border: 1px solid #ff5733;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +210,7 @@ background-color: black;
     font-size: 3.8rem;
   }
   .home-text p {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
   }
@@ -173,4 +230,12 @@ background-color: black;
   #about{
     padding: 2rem 1rem;
   }
+  .about-section-text, .service-card {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  width:100%;
+}
 }
