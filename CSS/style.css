@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100%;
   background-color: #000;
 }
 #home {
@@ -16,7 +25,7 @@ body {
     linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
   padding-top: 3rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 .navbar {
   position: sticky;
@@ -74,6 +83,9 @@ body {
   font-size: 4.8rem;
   font-weight: 600;
   font-family: "Geist mono", sans-serif;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 .home-text h1 span {
   color: #ff5733;
@@ -88,6 +100,9 @@ body {
 .home-text p {
   font-size: 1.2rem;
   font-weight:300;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .home-text {
   display: block;
@@ -97,11 +112,17 @@ body {
 }
 .home-image img {
   padding-top: 4rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .buttons{
   display: flex;
   justify-content: left;
   gap: 10px;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .buttons #btn {
   background-color: #ff5733;
@@ -137,7 +158,7 @@ body {
   padding: 1.6rem 1rem;
 }
 
-.about-section-begin, .service-section-begin {
+.about-section-begin, .service-section-begin, .portfolio-section-begin, .skills-section-begin, .languages-section-begin, .contact-section-begin {
   color: #ff5733;
   font-size: 1rem;
   font-weight: 300;
@@ -146,6 +167,9 @@ body {
   width: fit-content;
   padding: .25rem .7rem;
   border-radius: 15px;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .about-section-begin span{
   font-weight: 900;
@@ -157,6 +181,9 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-family: 'Geist mono';
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .about-section-text, .service-card {
@@ -170,6 +197,9 @@ body {
 .about-section-image img{
   width: 100%;
   margin-top: 2.3rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .services-cards {
   display: flex;
@@ -186,6 +216,9 @@ body {
   color: #ff5733;
   text-transform: uppercase;
   font-family: 'geist mono', monospace;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .service-card p {
   margin-top: 1rem;
@@ -194,11 +227,17 @@ body {
   line-height: 1.4;
   letter-spacing: 1px;
   font-size: 1.1rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .service-card{
   padding: 1.5rem;
   border: 1px solid #ff5733;
   border-radius: 10px;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
 }
 .service-main-card{
@@ -210,6 +249,9 @@ body {
 .service-section-image img{
   width: 70%;
   margin-top: 10rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 
@@ -222,19 +264,10 @@ body {
   background-size: 40px 40px;
   font-family: 'Geist', sans-serif;
   padding: 1.6rem 1rem;
-  min-height: 100vh;
+
 }
 
-.portfolio-section-begin {
-  color: #ff5733;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: 'Geist Mono', monospace;
-  border: 1px solid #ff5733;
-  width: fit-content;
-  padding: .25rem .7rem;
-  border-radius: 15px;
-}
+
 
 .portfolio-section-begin span {
   font-weight: 900;
@@ -246,6 +279,9 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-family: 'Geist mono';
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .portfolio-section h2 span {
@@ -260,6 +296,9 @@ body {
   letter-spacing: 1px;
   width: 80%;
   margin-bottom: 3rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .portfolio-grid {
@@ -275,6 +314,9 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .portfolio-image {
@@ -306,6 +348,9 @@ body {
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   text-transform: uppercase;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .portfolio-content p {
@@ -315,6 +360,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .portfolio-tags {
@@ -333,7 +381,6 @@ body {
   border: 1px solid #ff5733;
   cursor: pointer;
 }
-/* SKILLS & LANGUAGES SECTION */
 
 #skills {
   background-color: black;
@@ -346,7 +393,7 @@ body {
   min-height: 100vh;
 }
 
-/* Skills Section Styling */
+
 .skills-section-begin, .languages-section-begin {
   color: #ff5733;
   font-size: 1rem;
@@ -368,6 +415,9 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-family: 'Geist mono';
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .skills-section h2 span, .languages-section h2 span {
@@ -408,6 +458,9 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .skill-info h4 {
@@ -442,6 +495,9 @@ body {
   border: 1px solid rgba(255, 87, 51, 0.3);
   border-radius: 8px;
   transition: all 0.3s ease;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .soft-skill-item:hover {
@@ -476,6 +532,9 @@ body {
   border: 1px solid #ff5733;
   border-radius: 10px;
   margin-bottom: 1.5rem;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .language-header {
@@ -552,6 +611,9 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .stat-item h4 {
@@ -593,6 +655,9 @@ body {
   width: fit-content;
   padding: .25rem .7rem;
   border-radius: 15px;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .contact-section-begin span {
@@ -605,6 +670,9 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-family: 'Geist mono';
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .contact-section h2 span {
@@ -637,6 +705,9 @@ body {
   border: 1px solid rgba(255, 87, 51, 0.3);
   border-radius: 10px;
   transition: border-color 0.3s ease;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .contact-item i{
   color: #ff5733;
@@ -677,6 +748,9 @@ body {
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .social-link:hover {
@@ -701,8 +775,8 @@ color: #ffffff;
 
 .form-group {
   margin-bottom: 1.5rem;
+  
 }
-
 .form-group label {
   display: block;
   color: #ff5733;
@@ -711,6 +785,9 @@ color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .form-group input,
@@ -724,6 +801,9 @@ color: #ffffff;
   font-family: 'Geist', sans-serif;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .form-group input:focus,
@@ -749,6 +829,9 @@ color: #ffffff;
   transition: all 0.3s ease;
   width: 100%;
   text-transform: uppercase;
+   opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 #submit-btn:hover {
@@ -777,6 +860,50 @@ footer {
 }
 
 
+.skill-item.in-view,.soft-skill-item.in-view,.language-item.in-view,
+.stat-item.in-view, .contact-item.in-view,
+.about-section-begin.in-view, .about-section h2.in-view,
+.service-section-begin.in-view, .service-section h2.in-view,
+.portfolio-section-begin.in-view, .portfolio-section h2.in-view,
+.skills-section-begin.in-view, .skills-section h2.in-view,
+.languages-section-begin.in-view, .languages-section h2.in-view,
+.contact-section-begin.in-view, .contact-section h2.in-view, .tag.in-view, .stat-item.in-view, .social-link.in-view, .portfolio-section-text.in-view,
+.service-card.in-view, .portfolio-item.in-view,
+.portfolio-content h3.in-view, .portfolio-content h4.in-view,
+.portfolio-content p.in-view, .about-section-text.in-view, .service-card p.in-view, .service-card h3.in-view, .form-group label.in-view,
+.form-group input.in-view, .form-group textarea.in-view, #submit-btn.in-view, .service-section-image img.in-view,
+.home-text h1.in-view, .home-text p.in-view, .home-image img.in-view, .buttons.in-view,
+.about-section-image img.in-view
+{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes scaleUp {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 
@@ -791,9 +918,10 @@ footer {
 
 
 @media (min-width:300px) and (max-width: 850px) {
-  #home{
-    padding: 2rem .5rem;
+  body{
+    overflow-x: hidden;
   }
+
   .home-text h1 {
     font-size: 3.8rem;
   }
@@ -815,9 +943,7 @@ footer {
   .home-image img {
     width: 80%;
   }
-  #about, #services, #portfolio, #skills, #contact {
-    padding: 2rem .3rem;
-  }
+
   .about-section-text, .service-card {
   color: #ffffff;
   font-size: 1.1rem;
@@ -882,3 +1008,12 @@ footer {
     font-size: 2.5rem;
   }
 }
+
+
+
+
+
+
+
+
+
