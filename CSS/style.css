@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap");
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
-
 }
 *,
 *::before,
@@ -20,7 +19,7 @@ body {
 }
 #home {
   background-color: black;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -31,18 +30,17 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: black !important; 
-
+  background-color: black !important;
 }
 .navbar-nav {
   margin-left: auto;
 }
 .navbar-brand {
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 24px;
   color: #ffffff !important;
 }
-.navbar-brand span{
+.navbar-brand span {
   color: #ff5733;
 }
 .navbar-nav .nav-item .nav-link {
@@ -73,19 +71,21 @@ body {
   height: 20px;
 } */
 .home-text {
- margin-top: 6rem;
+  margin-top: 6rem;
   padding-top: 3.5rem;
   text-align: left;
   color: #ffffff;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
 }
 .home-text h1 {
   font-size: 4.8rem;
   font-weight: 600;
   font-family: "Geist mono", sans-serif;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  transition:
+    opacity 1.5s ease-out,
+    transform 1.5s ease-out;
 }
 .home-text h1 span {
   color: #ff5733;
@@ -99,10 +99,12 @@ body {
 }
 .home-text p {
   font-size: 1.2rem;
-  font-weight:300;
-   opacity: 0;
+  font-weight: 300;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 .home-text {
   display: block;
@@ -112,24 +114,28 @@ body {
 }
 .home-image img {
   padding-top: 4rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-.buttons{
+.buttons {
   display: flex;
   justify-content: left;
   gap: 10px;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 .buttons #btn {
   background-color: #ff5733;
   color: #ffffff;
   border: 2px solid #ff5733;
-  font-family: 'Geist Mono', monospace;
-  transition: .3s ease-in-out;
+  font-family: "Geist Mono", monospace;
+  transition: 0.3s ease-in-out;
 }
 .buttons #btn:hover {
   background-color: black;
@@ -138,7 +144,7 @@ body {
 .buttons #btn2 {
   color: #ffffff;
   border: 2px solid #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
 }
 .buttons #btn2:hover {
   background-color: #ff5733;
@@ -148,77 +154,92 @@ body {
   color: #ff5733;
 }
 
-#about, #services {
+#about,
+#services {
   background-color: black;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   padding: 1.6rem 1rem;
 }
 
-.about-section-begin, .service-section-begin, .portfolio-section-begin, .skills-section-begin, .languages-section-begin, .contact-section-begin {
+.about-section-begin,
+.service-section-begin,
+.portfolio-section-begin,
+.skills-section-begin,
+.languages-section-begin,
+.contact-section-begin {
   color: #ff5733;
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   border: 1px solid #ff5733;
   width: fit-content;
-  padding: .25rem .7rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 15px;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-.about-section-begin span{
+.about-section-begin span {
   font-weight: 900;
 }
 
-.about-section h2, .service-section h2 {
+.about-section h2,
+.service-section h2 {
   color: #ffffff;
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Geist mono';
-   opacity: 0;
+  font-family: "Geist mono";
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
-.about-section-text, .service-card {
+.about-section-text,
+.service-card {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 1px;
-  width:80%;
+  width: 80%;
 }
-.about-section-image img{
+.about-section-image img {
   width: 100%;
   margin-top: 2.3rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 .services-cards {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  
 }
 .service-card h3 {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   flex-wrap: wrap;
   color: #ff5733;
   text-transform: uppercase;
-  font-family: 'geist mono', monospace;
-   opacity: 0;
+  font-family: "geist mono", monospace;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 .service-card p {
   margin-top: 1rem;
@@ -227,47 +248,47 @@ body {
   line-height: 1.4;
   letter-spacing: 1px;
   font-size: 1.1rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-.service-card{
+.service-card {
   padding: 1.5rem;
   border: 1px solid #ff5733;
   border-radius: 10px;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-.service-main-card{
+.service-main-card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
 }
-.service-section-image img{
+.service-section-image img {
   width: 70%;
   margin-top: 10rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-
-
 
 #portfolio {
   background-color: black;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   padding: 1.6rem 1rem;
-
 }
-
-
 
 .portfolio-section-begin span {
   font-weight: 900;
@@ -278,10 +299,12 @@ body {
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Geist mono';
-   opacity: 0;
+  font-family: "Geist mono";
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .portfolio-section h2 span {
@@ -296,9 +319,11 @@ body {
   letter-spacing: 1px;
   width: 80%;
   margin-bottom: 3rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .portfolio-grid {
@@ -313,10 +338,12 @@ body {
   border: 1px solid #ff5733;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-   opacity: 0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  /* opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; */
 }
 
 .portfolio-image {
@@ -342,15 +369,18 @@ body {
   padding: 1.5rem;
 }
 
-.portfolio-content h3, .portfolio-content h4 {
+.portfolio-content h3,
+.portfolio-content h4 {
   color: #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   text-transform: uppercase;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .portfolio-content p {
@@ -360,9 +390,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .portfolio-tags {
@@ -377,50 +409,61 @@ body {
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   border: 1px solid #ff5733;
   cursor: pointer;
 }
 
-#skills {
+#skills,
+#testimonials {
   background-color: black;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   padding: 1.6rem 1rem;
   min-height: 100vh;
 }
 
-
-.skills-section-begin, .languages-section-begin {
+.skills-section-begin,
+.languages-section-begin {
   color: #ff5733;
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   border: 1px solid #ff5733;
   width: fit-content;
-  padding: .25rem .7rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 15px;
+    opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
-.skills-section-begin span, .languages-section-begin span {
+.skills-section-begin span,
+.languages-section-begin span {
   font-weight: 900;
 }
 
-.skills-section h2, .languages-section h2 {
+.skills-section h2,
+.languages-section h2 {
   color: #ffffff;
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Geist mono';
-   opacity: 0;
+  font-family: "Geist mono";
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
-.skills-section h2 span, .languages-section h2 span {
+.skills-section h2 span,
+.languages-section h2 span {
   color: #ff5733;
 }
 
@@ -432,7 +475,7 @@ body {
 
 .skill-category h3 {
   color: #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -447,7 +490,6 @@ body {
   margin-top: 1.5rem;
 }
 
-
 .skill-item {
   display: flex;
   align-items: center;
@@ -458,14 +500,16 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
-    opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .skill-info h4 {
   color: #ffffff;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
@@ -495,9 +539,11 @@ body {
   border: 1px solid rgba(255, 87, 51, 0.3);
   border-radius: 8px;
   transition: all 0.3s ease;
-    opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .soft-skill-item:hover {
@@ -515,7 +561,7 @@ body {
 
 .soft-skill-item p {
   color: #ffffff;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   margin: 0;
@@ -532,9 +578,11 @@ body {
   border: 1px solid #ff5733;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-    opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .language-header {
@@ -546,7 +594,7 @@ body {
 
 .language-header h3 {
   color: #ffffff;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.5rem;
   margin: 0;
   text-transform: uppercase;
@@ -557,7 +605,7 @@ body {
   color: #ffffff;
   padding: 0.4rem 1rem;
   border-radius: 20px;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -611,14 +659,29 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+.testimonial-section h1{
     opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-
+.testimonial-section p{
+    opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
 .stat-item h4 {
   color: #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 3rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -626,22 +689,87 @@ body {
 
 .stat-item p {
   color: #ffffff;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.first-set,
+.second-set {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+}
 
+.testimonial-card {
+  border: 1px dashed #ff5733;
+  border-radius: 15px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  padding: 1rem;
+  width: calc(50% - 0.5rem); /* 50% width minus half the gap for spacing */
+  margin-top: 3%;
+    opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+/* .testimonial-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(11, 94, 215, 0.15);
+} */
+
+.testimonial-text {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: "Geist Mono";
+  /* opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; */
+}
+.testimonial-name {
+  margin-top: 1rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+.card-body h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff5733;
+  margin: 0;
+  font-family: "Geist Mono", sans-serif;
+}
+.card-body p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Geist", sans-serif;
+  /* opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+*/
+}
 /* CONTACT SECTION */
 #contact {
   background-color: black;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   padding: 1.6rem 1rem;
   min-height: 100vh;
 }
@@ -650,14 +778,16 @@ body {
   color: #ff5733;
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   border: 1px solid #ff5733;
   width: fit-content;
-  padding: .25rem .7rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 15px;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .contact-section-begin span {
@@ -669,10 +799,12 @@ body {
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Geist mono';
-   opacity: 0;
+  font-family: "Geist mono";
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .contact-section h2 span {
@@ -705,11 +837,13 @@ body {
   border: 1px solid rgba(255, 87, 51, 0.3);
   border-radius: 10px;
   transition: border-color 0.3s ease;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
-.contact-item i{
+.contact-item i {
   color: #ff5733;
   font-size: 2rem;
 }
@@ -719,7 +853,7 @@ body {
 
 .contact-item h4 {
   color: #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -748,9 +882,11 @@ body {
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .social-link:hover {
@@ -759,9 +895,8 @@ body {
 }
 
 .social-link i {
-color: #ffffff;
+  color: #ffffff;
   font-size: 2rem;
-
 }
 
 .social-link:hover i {
@@ -775,19 +910,20 @@ color: #ffffff;
 
 .form-group {
   margin-bottom: 1.5rem;
-  
 }
 .form-group label {
   display: block;
   color: #ff5733;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .form-group input,
@@ -798,12 +934,14 @@ color: #ffffff;
   border: 1px solid rgba(255, 87, 51, 0.3);
   border-radius: 8px;
   color: #ffffff;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 1rem;
   transition: border-color 0.3s ease;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .form-group input:focus,
@@ -822,16 +960,18 @@ color: #ffffff;
   color: #ffffff;
   border: 2px solid #ff5733;
   padding: 0.8rem 2rem;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
   text-transform: uppercase;
-   opacity: 0;
+  opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 #submit-btn:hover {
@@ -849,7 +989,7 @@ footer {
 .footer-content {
   text-align: center;
   color: #ffffff;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
 }
 
 .footer-content p {
@@ -859,26 +999,51 @@ footer {
   letter-spacing: 1px;
 }
 
-
-.skill-item.in-view,.soft-skill-item.in-view,.language-item.in-view,
-.stat-item.in-view, .contact-item.in-view,
-.about-section-begin.in-view, .about-section h2.in-view,
-.service-section-begin.in-view, .service-section h2.in-view,
-.portfolio-section-begin.in-view, .portfolio-section h2.in-view,
-.skills-section-begin.in-view, .skills-section h2.in-view,
-.languages-section-begin.in-view, .languages-section h2.in-view,
-.contact-section-begin.in-view, .contact-section h2.in-view, .tag.in-view, .stat-item.in-view, .social-link.in-view, .portfolio-section-text.in-view,
-.service-card.in-view, .portfolio-item.in-view,
-.portfolio-content h3.in-view, .portfolio-content h4.in-view,
-.portfolio-content p.in-view, .about-section-text.in-view, .service-card p.in-view, .service-card h3.in-view, .form-group label.in-view,
-.form-group input.in-view, .form-group textarea.in-view, #submit-btn.in-view, .service-section-image img.in-view,
-.home-text h1.in-view, .home-text p.in-view, .home-image img.in-view, .buttons.in-view,
-.about-section-image img.in-view
-{
+.skill-item.in-view,
+.soft-skill-item.in-view,
+.language-item.in-view,
+.stat-item.in-view,
+.contact-item.in-view,
+.about-section-begin.in-view,
+.about-section h2.in-view,
+.service-section-begin.in-view,
+.service-section h2.in-view,
+.portfolio-section-begin.in-view,
+.portfolio-section h2.in-view,
+.skills-section-begin.in-view,
+.skills-section h2.in-view,
+.languages-section-begin.in-view,
+.languages-section h2.in-view,
+.contact-section-begin.in-view,
+.contact-section h2.in-view,
+.tag.in-view,
+.stat-item.in-view,
+.social-link.in-view,
+.portfolio-section-text.in-view,
+.service-card.in-view,
+.portfolio-item.in-view,
+.portfolio-content h3.in-view,
+.portfolio-content h4.in-view,
+.portfolio-content p.in-view,
+.about-section-text.in-view,
+.service-card p.in-view,
+.service-card h3.in-view,
+.form-group label.in-view,
+.form-group input.in-view,
+.form-group textarea.in-view,
+#submit-btn.in-view,
+.service-section-image img.in-view,
+.home-text h1.in-view,
+.home-text p.in-view,
+.home-image img.in-view,
+.buttons.in-view,
+.about-section-image img.in-view,
+.testimonial-section h1.in-view,
+.testimonial-section p.in-view,
+.testimonial-card.in-view{
   opacity: 1;
   transform: scale(1);
 }
-
 
 @keyframes slideLeft {
   to {
@@ -904,21 +1069,8 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:300px) and (max-width: 850px) {
-  body{
+@media (min-width: 300px) and (max-width: 850px) {
+  body {
     overflow-x: hidden;
   }
 
@@ -930,32 +1082,35 @@ footer {
     font-weight: 300;
     letter-spacing: 1px;
   }
-  .buttons{
-    display: flex;    
+  .buttons {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 0 auto;
     align-items: left;
   }
-  .buttons #btn, .buttons #btn2 {
+  .buttons #btn,
+  .buttons #btn2 {
     width: 100%;
   }
   .home-image img {
     width: 80%;
   }
 
-  .about-section-text, .service-card {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 300;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  width:100%;
-}
-.about-section h2, .service-section h2 {
-  margin-top: 3rem;
-  font-family: 'Geist mono';
-}
+  .about-section-text,
+  .service-card {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  .about-section h2,
+  .service-section h2 {
+    margin-top: 3rem;
+    font-family: "Geist mono";
+  }
   .portfolio-section-text,
   .contact-section-text {
     width: 100%;
@@ -964,7 +1119,8 @@ footer {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-  .portfolio-item h3, .portfolio-item h4 {
+  .portfolio-item h3,
+  .portfolio-item h4 {
     font-size: 1.2rem;
   }
   .portfolio-item p {
@@ -981,7 +1137,7 @@ footer {
   #contact .row {
     flex-direction: column-reverse;
   }
-   .skills-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1007,13 +1163,13 @@ footer {
   .stat-item h4 {
     font-size: 2.5rem;
   }
+    .first-set,
+  .second-set {
+    flex-direction: column; /* Stack vertically on mobile */
+  }
+  
+  .testimonial-card {
+    width: 100%; /* Full width on mobile */
+    margin-top: 4%;
+  }
 }
-
-
-
-
-
-
-
-
-
