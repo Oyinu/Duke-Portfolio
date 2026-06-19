@@ -82,10 +82,10 @@ body {
   font-weight: 600;
   font-family: "Geist mono", sans-serif;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 1.5s ease-out,
-    transform 1.5s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .home-text h1 span {
   color: #ff5733;
@@ -101,10 +101,10 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .home-text {
   display: block;
@@ -115,20 +115,20 @@ body {
 .home-image img {
   padding-top: 4rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .buttons {
   display: flex;
   justify-content: left;
   gap: 10px;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .buttons #btn {
   background-color: #ff5733;
@@ -180,10 +180,10 @@ body {
   padding: 0.25rem 0.7rem;
   border-radius: 15px;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .about-section-begin span {
   font-weight: 900;
@@ -197,10 +197,10 @@ body {
   margin-bottom: 1rem;
   font-family: "Geist mono";
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .about-section-text,
@@ -215,11 +215,15 @@ body {
 .about-section-image img {
   width: 100%;
   margin-top: 2.3rem;
+  border-radius: 16px;
+  -webkit-mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);
+  mask-image: radial-gradient(ellipse 88% 88% at 50% 50%, black 50%, transparent 100%);
+  mix-blend-mode: lighten;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .services-cards {
   display: flex;
@@ -236,10 +240,10 @@ body {
   text-transform: uppercase;
   font-family: "geist mono", monospace;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .service-card p {
   margin-top: 1rem;
@@ -249,20 +253,20 @@ body {
   letter-spacing: 1px;
   font-size: 1.1rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .service-card {
   padding: 1.5rem;
-  border: 1px solid #ff5733;
+  border: 1px solid rgba(255, 87, 51, 0.35);
   border-radius: 10px;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .service-main-card {
   display: flex;
@@ -273,11 +277,15 @@ body {
 .service-section-image img {
   width: 70%;
   margin-top: 10rem;
+  border-radius: 16px;
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 45%, transparent 100%);
+  mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 45%, transparent 100%);
+  mix-blend-mode: lighten;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #portfolio {
@@ -301,10 +309,10 @@ body {
   margin-bottom: 1rem;
   font-family: "Geist mono";
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-section h2 span {
@@ -320,10 +328,10 @@ body {
   width: 80%;
   margin-bottom: 3rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-grid {
@@ -335,15 +343,13 @@ body {
 
 .portfolio-item {
   background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid #ff5733;
+  border: 1px solid rgba(255, 87, 51, 0.35);
   border-radius: 10px;
   overflow: hidden;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  /* opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; */
+  /* opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
 }
 
 .portfolio-image {
@@ -377,10 +383,10 @@ body {
   margin-bottom: 0.8rem;
   text-transform: uppercase;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-content p {
@@ -391,10 +397,10 @@ body {
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-tags {
@@ -437,10 +443,10 @@ body {
   padding: 0.25rem 0.7rem;
   border-radius: 15px;
     opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .skills-section-begin span,
@@ -456,10 +462,10 @@ body {
   margin-bottom: 1rem;
   font-family: "Geist mono";
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .skills-section h2 span,
@@ -501,10 +507,10 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .skill-info h4 {
@@ -540,10 +546,10 @@ body {
   border-radius: 8px;
   transition: all 0.3s ease;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .soft-skill-item:hover {
@@ -575,14 +581,14 @@ body {
 .language-item {
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid #ff5733;
+  border: 1px solid rgba(255, 87, 51, 0.35);
   border-radius: 10px;
   margin-bottom: 1.5rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .language-header {
@@ -660,24 +666,24 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .testimonial-section h1{
     opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .testimonial-section p{
     opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .stat-item h4 {
   color: #ff5733;
@@ -705,7 +711,7 @@ body {
 }
 
 .testimonial-card {
-  border: 1px dashed #ff5733;
+  border: 1px dashed rgba(255, 87, 51, 0.3);
   border-radius: 15px;
   transition:
     transform 0.3s ease,
@@ -716,10 +722,10 @@ body {
   width: calc(50% - 0.5rem); /* 50% width minus half the gap for spacing */
   margin-top: 3%;
     opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 /* .testimonial-card:hover {
   transform: scale(1.1);
@@ -732,17 +738,15 @@ body {
   font-weight: 300;
   line-height: 1.6;
   font-family: "Geist Mono";
-  /* opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; */
+  /* opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
 }
 .testimonial-name {
   margin-top: 1rem;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .card-body h4 {
   font-size: 1.5rem;
@@ -757,9 +761,7 @@ body {
   color: #ffffff;
   margin: 0;
   font-family: "Geist", sans-serif;
-  /* opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 */
 }
 /* CONTACT SECTION */
@@ -784,10 +786,10 @@ body {
   padding: 0.25rem 0.7rem;
   border-radius: 15px;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .contact-section-begin span {
@@ -801,10 +803,10 @@ body {
   margin-bottom: 1rem;
   font-family: "Geist mono";
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .contact-section h2 span {
@@ -838,10 +840,10 @@ body {
   border-radius: 10px;
   transition: border-color 0.3s ease;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .contact-item i {
   color: #ff5733;
@@ -878,15 +880,15 @@ body {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 1px solid #ff5733;
+  border: 1px solid rgba(255, 87, 51, 0.4);
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .social-link:hover {
@@ -920,10 +922,10 @@ body {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .form-group input,
@@ -938,10 +940,10 @@ body {
   font-size: 1rem;
   transition: border-color 0.3s ease;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .form-group input:focus,
@@ -968,10 +970,10 @@ body {
   width: 100%;
   text-transform: uppercase;
   opacity: 0;
-  transform: scale(0.8);
+  transform: translateY(30px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #submit-btn:hover {
@@ -982,7 +984,7 @@ body {
 /* FOOTER */
 footer {
   background-color: #000;
-  border-top: 1px solid #ff5733;
+  border-top: 1px solid rgba(255, 87, 51, 0.25);
   padding: 2rem 0;
 }
 
@@ -1042,7 +1044,7 @@ footer {
 .testimonial-section p.in-view,
 .testimonial-card.in-view{
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
 }
 
 @keyframes slideLeft {
